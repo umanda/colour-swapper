@@ -13,25 +13,28 @@
     "url": "https://github.com/umanda/colour-swapper/issues"
   },
   "keywords": [
-    "color swap",
-    "rgb to grayscale",
-    "rgb color swap",
+    "grayscale",
+    "rgb",
     "tinycolor2",
-    "color edit"
+    "colour",
+    "swap",
+    "utility"
   ],
   "type": "module",
   "main": "./dist/colour-swapper.umd.cjs",
   "module": "./dist/colour-swapper.js",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/colour-swapper.d.ts",
+  "typings": "./typings/colour-swapper.d.ts",
   "exports": {
     ".": {
       "import": "./dist/colour-swapper.js",
       "require": "./dist/colour-swapper.umd.cjs",
-      "types": "./dist/index.d.ts"
+      "types": "./typings/colour-swapper.d.ts"
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "typings"
   ],
   "scripts": {
     "dev": "vite",

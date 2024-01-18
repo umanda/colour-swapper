@@ -1,7 +1,7 @@
 {
   "name": "colour-swapper",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "This is a starter package for an npm library, built using TypeScript and Vite.",
   "author": "Umanda Jayobandara",
   "license": "MIT",

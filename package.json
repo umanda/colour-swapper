@@ -20,13 +20,13 @@
     "color edit"
   ],
   "type": "module",
-  "main": "./dist/my-lib.umd.cjs",
-  "module": "./dist/my-lib.js",
+  "main": "./dist/colour-swapper.umd.cjs",
+  "module": "./dist/colour-swapper.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/my-lib.js",
-      "require": "./dist/my-lib.umd.cjs",
+      "import": "./dist/colour-swapper.js",
+      "require": "./dist/colour-swapper.umd.cjs",
       "types": "./dist/index.d.ts"
     }
   },

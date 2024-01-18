@@ -20,12 +20,11 @@ Additionally, colour-swapper offers functionality to find the closest color valu
    const expectedOutput = '#404040';
    const result = grayscale(inputColor);
    ```
-2. SWAP RBG colors based on given colors
+2. Swap RBG colors based on given colors
 
    ```js
    import colorswap from "colour-swapper";
-   const coloPallet = ['#fc5185','#364f6b','#43dde6','#f0f0f0'];
+   const colorPallet = ['#fc5185','#364f6b','#43dde6','#f0f0f0'];
    const inputColors = ['#ffff00' ,'#ffa500'];
-   const expectedOutput = ['#364f6b','#fc5185'];
    const result = colorswap(inputColors, coloPallet);
    ```

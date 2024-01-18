@@ -4,7 +4,7 @@
   "description": "colour-swapper is a compact and efficient JavaScript library designed for color manipulation and conversion",
   "author": "Umanda Jayobandara",
   "license": "MIT",
-  "homepage": "https://umandajayobandara.com",
+  "homepage": "https://github.com/umanda/colour-swapper",
   "repository": {
     "type": "git",
     "url": "https://github.com/umanda/colour-swapper"

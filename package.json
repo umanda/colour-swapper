@@ -1,6 +1,5 @@
 {
   "name": "colour-swapper",
-  "private": true,
   "version": "1.0.0",
   "description": "colour-swapper is a compact and efficient JavaScript library designed for color manipulation and conversion",
   "author": "Umanda Jayobandara",

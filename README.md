@@ -12,11 +12,20 @@ Additionally, colour-swapper offers functionality to find the closest color valu
 
       npm install colour-swapper
 
-1. Conver RBG to Graytone
+1. Convert RBG to Graytone
 
    ```js
    import grayscale from "colour-swapper";
    const inputColor = '#008000';
    const expectedOutput = '#404040';
    const result = grayscale(inputColor);
+   ```
+2. SWAP RBG colors based on given colors
+
+   ```js
+   import colorswap from "colour-swapper";
+   const coloPallet = ['#fc5185','#364f6b','#43dde6','#f0f0f0'];
+   const inputColors = ['#ffff00' ,'#ffa500'];
+   const expectedOutput = ['#364f6b','#fc5185'];
+   const result = colorswap(inputColors, coloPallet);
    ```

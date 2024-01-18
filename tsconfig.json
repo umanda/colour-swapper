@@ -10,6 +10,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
 
     /* Linting */
     "strict": true,

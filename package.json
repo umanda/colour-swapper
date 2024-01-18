@@ -2,24 +2,23 @@
   "name": "colour-swapper",
   "private": true,
   "version": "1.0.0",
-  "description": "This is a starter package for an npm library, built using TypeScript and Vite.",
+  "description": "colour-swapper is a compact and efficient JavaScript library designed for color manipulation and conversion",
   "author": "Umanda Jayobandara",
   "license": "MIT",
   "homepage": "https://umandajayobandara.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/umanda/my-ts-lib.git"
+    "url": "https://github.com/umanda/colour-swapper"
   },
   "bugs": {
-    "url": "https://github.com/umanda/my-ts-lib/issues"
+    "url": "https://github.com/umanda/colour-swapper/issues"
   },
   "keywords": [
-    "npm",
-    "starter-kit",
-    "npm library",
-    "typescript",
-    "vite",
-    "package"
+    "color swap",
+    "rgb to grayscale",
+    "rgb color swap",
+    "tinycolor2",
+    "color edit"
   ],
   "type": "module",
   "main": "./dist/my-lib.umd.cjs",

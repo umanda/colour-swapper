@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'; // Update with the actual path
-import grayscale from '../src/greyscale';
+import grayscale from '../src/grayscale';
 
 describe('grayscale function', () => {
   it('should convert #008000 to #404040', () => {

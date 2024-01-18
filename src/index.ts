@@ -1,2 +1,2 @@
-export { default as greyscale } from './greyscale';
+export { default as grayscale } from './grayscale';
 export { default as colorswap } from './colorswap';

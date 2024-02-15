@@ -6,6 +6,7 @@ interface Color {
   hsl: any;
   index: number;
   isMostNearer: boolean;
+  alpha: string; // Added to store alpha values
 }
 
 interface PaletteColor {
@@ -18,12 +19,16 @@ interface PaletteColor {
 const colorswap = (colors: string[], palette: string[]): string[] => {
   // Prepare objects with initial values
   const fillColors: Color[] = colors.map((c, index): Color => {
-    //console.log("colors, palette" , palette);
+    const colorObj = tinycolor(c);
+    // Correctly extract and format the alpha value as a two-digit hex string
+    let alpha = Math.round(colorObj.getAlpha() * 255).toString(16);
+    alpha = alpha.length === 1 ? '0' + alpha : alpha; // Ensure two digits
     return {
       hsl: tinycolor(c).toHsl(),
       index, // Original index
       isMostNearer: false,
       hex: undefined,
+      alpha: colorObj.getAlpha() === 1 ? '' : alpha, // Store alpha hex, if fully opaque, store empty string
     };
   });
   const paletteColors: PaletteColor[] = palette.map(
@@ -128,7 +133,8 @@ const colorswap = (colors: string[], palette: string[]): string[] => {
       });
     });
 
-  return fillColors.map((c) => tinycolor(c.hsl).toHexString());
+  // When converting back to hex, append the alpha values
+  return fillColors.map((c) => tinycolor(c.hsl).toHexString() + c.alpha);
 };
 
 export default colorswap;

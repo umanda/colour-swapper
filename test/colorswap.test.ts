@@ -9,9 +9,14 @@ describe('colorswap', () => {
       const inputColors2 = ['#008000'];
       const expectedOutput2 = ['#364f6b'];
 
+      const inputColors3 = ['#ffff00BF' ,'#ffa50059'];
+      const expectedOutput3 = ['#364f6bbf','#fc518559'];
+
       const result = colorswap(inputColors, coloPallet);
       const result2 = colorswap(inputColors2, coloPallet);
+      const result3 = colorswap(inputColors3, coloPallet);
       expect(result).toEqual(expectedOutput);
       expect(result2).toEqual(expectedOutput2);
+      expect(result3).toEqual(expectedOutput3);
   });
 });
